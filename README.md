@@ -1,14 +1,12 @@
 # Generics
 Generic Libraries for C programming
 
-# Singly Linked List Library
-
-This C library provides a simple implementation of a singly linked list data structure along with various operations to manipulate it.
+This C library provides implementations of various data structures, including singly linked lists, stacks, queues, trees, and AVL trees. Each data structure offers functionalities for creating, manipulating, and managing data in C programs.
 
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Use Cases](#use-cases)
+- [Supported Data Structures](#supported-data-structures)
 - [Structure](#structure)
 - [How to Use](#how-to-use)
   - [Building](#building)
@@ -19,29 +17,33 @@ This C library provides a simple implementation of a singly linked list data str
 
 ## Introduction
 
-A singly linked list is a data structure consisting of a sequence of elements in which each element points to the next element in the sequence. This library provides functionalities to create, manipulate, and destroy singly linked lists in C.
+Data structures play a crucial role in computer science and programming by organizing and storing data efficiently. This library aims to provide reusable and efficient implementations of common data structures in C.
 
-## Use Cases
+## Supported Data Structures
 
-Singly linked lists are commonly used in scenarios where dynamic memory allocation is required, such as:
+The library includes the following data structures:
 
-- Managing a collection of data with unknown size.
-- Implementing various data structures like stacks, queues, and hash tables.
-- Manipulating large datasets efficiently.
+- Singly Linked List
+- Stack
+- Queue
+- Tree
+- AVL Tree
+
+Each data structure is designed to address specific use cases and offers distinct advantages in terms of performance and memory usage.
 
 ## Structure
 
-The library consists of the following components:
+The library follows a modular structure, with each data structure contained in its own set of files:
 
-- **Header File**: `tm_sll.h` - Contains declarations of all functions and structures provided by the library.
-- **Source File**: `tm_sll.c` - Implements the functionalities declared in the header file.
-- **Test Case**: `tm_sll_test_case.c` - Demonstrates the usage of the library through a simple test case.
+- **Header Files**: Each data structure has its own header file (e.g., `tm_sll.h` for singly linked list) containing declarations of functions and structures.
+- **Source Files**: Corresponding source files (e.g., `tm_sll.c`) implement the functionalities declared in the header files.
+- **Test Cases**: Each data structure may have its own test case file (e.g., `tm_sll_test_case.c`) demonstrating usage and testing.
 
 ## How to Use
 
 ### Building
 
-To build the library, you can compile the `tm_sll.c` file along with your project.
+To build the library, compile the source files corresponding to the data structures you want to use along with your project.
 
 Example compilation command:
 
@@ -51,12 +53,12 @@ gcc tm_sll.c tm_sll_test_case.c -o tm_sll_test_case
 
 ### Integration
 
-To integrate the library into your project, follow these steps:
+To integrate a data structure into your project, follow these steps:
 
-1. Copy the `tm_sll.h` header file and `tm_sll.c` source file into your project directory.
-2. Include the `tm_sll.h` header file wherever you need to use the singly linked list functionalities.
-3. Compile your project along with `tm_sll.c`.
-4. Use the provided functions to create, manipulate, and destroy singly linked lists in your code.
+1. Copy the header file and source file corresponding to the desired data structure into your project directory.
+2. Include the header file wherever you need to use the functionalities of that data structure.
+3. Compile your project along with the source file of the data structure.
+4. Use the provided functions and structures to work with the data structure in your code.
 
 Example usage:
 
@@ -83,9 +85,9 @@ int main() {
 
 ## Testing
 
-The provided test case `tm_sll_test_case.c` demonstrates the usage of the library by creating, manipulating, and testing the singly linked list functionalities.
+The library includes test case files for each data structure, demonstrating usage and providing a way to verify correct behavior.
 
-To run the test case:
+To run a test case:
 
 1. Compile the test case along with the library source files.
 2. Execute the compiled binary.

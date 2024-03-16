@@ -93,7 +93,3 @@ To run the test case:
 ## Contributing
 
 Contributions to the library are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/example/repo).
-
-## License
-
-This library is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
